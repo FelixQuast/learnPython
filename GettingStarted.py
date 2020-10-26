@@ -33,3 +33,16 @@ liste = ("hallo", 3.14, 35)
 print("erstes: %s, zweites: %r, drittes: %r" %(liste))
 print(type(liste))
 
+g = "hallo"
+h = "test"
+i = 3.14
+print('test 1: {}, test 2: {}, test 3: {}'.format(g, h, i))     #die klammern bleiben leer. Sollen an die stellen Platzhaler rein müssen diese im "format def werden
+
+j = "Stuhl"
+k = "1000000€"
+print('Zu Verkaufen: {Ware}, Preis: {Preis}'.format(Ware = j, Preis = k))     #die klammern bleiben leer. Sollen an die stellen Platzhaler rein müssen diese im "format def werden
+
+
+
+
+
