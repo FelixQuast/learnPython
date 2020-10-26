@@ -32,3 +32,4 @@ print("%s ist %40.10f Jahre alt" %(neuername, 66.852))
 liste = ("hallo", 3.14, 35)
 print("erstes: %s, zweites: %r, drittes: %r" %(liste))
 print(type(liste))
+
