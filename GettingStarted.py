@@ -40,9 +40,5 @@ print('test 1: {}, test 2: {}, test 3: {}'.format(g, h, i))     #die klammern bl
 
 j = "Stuhl"
 k = "1000000€"
-print('Zu Verkaufen: {Ware}, Preis: {Preis}'.format(Ware = j, Preis = k))     #die klammern bleiben leer. Sollen an die stellen Platzhaler rein müssen diese im "format def werden
-
-
-
-
+print('Zu Verkaufen: {Ware}, Preis: {Preis}'.format(Ware = j, Preis = k))
 
