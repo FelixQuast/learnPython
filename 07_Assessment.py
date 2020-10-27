@@ -4,6 +4,8 @@
 # Beschreibungvon Zahlen, Strings, Listen, Tupel, Dictionaries
 # Zahlen: Es gibt Integers und Floats
 
+
+
 # Strings: Eingabe in Anführungszeichen oder zwischen Apostroph
 #   Auswahl und änderung mäglich
 a = "test"
@@ -14,10 +16,12 @@ else:
     print(False)
 print(a[2])
 print("-------")
+
+
+
 # Listen: sind stacks, also oben kommt was drauf/runter. Erstellung durch eckige Klammern
 # Listen können alles mögliche enthalten und auch verschachtelt werden.
 # Positionen können durch Anwahl der Position ihrer Elemente geändert werden
-
 liste = [1, 3.14, "String", ["sub1", "sub2", "sub3"], True, 5, 5, 5]
 print(liste)
 liste.append("Anhang")      # hinten anhängen
@@ -31,11 +35,12 @@ print(c)
 neue_liste = [0,1,2,3,4,5,6,7,8,9]
 d = neue_liste[5]
 print("-------")
-
 print(d)
 neue_liste[5] = 6
 print(neue_liste[5])
 print("-------")
+
+
 
 # tupel werden mit runden klammern erzeugt
 # Ihre inhalte können gezielt über die Elementposition gelesen, nicht aber geändert werden
@@ -48,4 +53,23 @@ f = mein_tupel.index(3)
 print(e)
 print(f)
 print("-------")
+
+
+
+# Dictionaries: haben keine Reihenfolge. werden quasi anschaulich von der seite befüllt.
+# {Erstellt mit geschwungenen Klammern}, immer mit key und value
+# Dictionaries haben keine Reihenfolge in sich. Anwahl und ändern von Elementen über Keys
+mein_dict = {"key_one":"value_one", "key_two":2, "key_three":3.14, "key_four":True, "key_five":[1,2,True,"String"]}
+print(mein_dict)
+g = mein_dict["key_three"]
+print(g)
+mein_dict["key_three"] = "Nussknacker"
+print(mein_dict)
+mein_dict.pop("key_two")
+print(mein_dict)
+h = mein_dict["key_five"][3]
+print(h)
+mein_dict ["keytest"]= "lel"
+print(mein_dict)
+
 
