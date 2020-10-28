@@ -71,5 +71,10 @@ h = mein_dict["key_five"][3]
 print(h)
 mein_dict ["keytest"]= "lel"
 print(mein_dict)
+mein_dict["key_three"]
+print("-------")
 
+
+Zahl = 101 + 50 * 3 + 6**2 +6/3 -188.75
+print(Zahl)
 
