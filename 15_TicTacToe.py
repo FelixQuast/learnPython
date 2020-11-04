@@ -21,9 +21,6 @@ matrix = [l1,
           l3]
 
 # Funktionen
-def button_action():
-    anweisungs_label.config(text="Ich wurde geändert!")
-
 def pick(ident, matrix_ident):
     global spieler_eins
     global matrix
@@ -55,12 +52,9 @@ def pick(ident, matrix_ident):
                            spalte2,
                            spalte3]
     gewinner()
-
-
 def winner_one():
     print("Spieler 1 hat gewonnen")
     gewinnerlabel.config(text="Spieler 1 hat gewonnen")
-
 
 def winner_two():
     print("Spieler 2 hat gewonnen")
@@ -104,13 +98,11 @@ def reset():
     B_cc.config(text=" ")
     gewinnerlabel.config(text = " ")
 
-
     # Fenster für GUI mit tkinter
 
 fenster = Tk()
 fenster.geometry("500x700")
 fenster.title("TicTacToe")
-
 
 # Buttons:
 neues_spiel = Button(fenster, text="NEUES SPIEL", command=reset)
@@ -127,12 +119,10 @@ B_ca = Button(fenster, text =" ", command=partial(pick, "B_ca", "matrix[2][0] = 
 B_cb = Button(fenster, text =" ", command=partial(pick, "B_cb", "matrix[2][1] = spaceship"))
 B_cc = Button(fenster, text =" ", command=partial(pick, "B_cc", "matrix[2][2] = spaceship"))
 
-
 # LABELS
 gewinnerlabel = Label(fenster, text=" ")
 info_label = Label(fenster, text="TicTacToe\n\
 Spieler 1 ist X, Spieler 2 ist O")
-
 
 # PLACEMENT
 info_label.place(x = 175, y = 20, width=150, height=40)
