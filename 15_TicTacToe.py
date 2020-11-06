@@ -1,14 +1,9 @@
-# TicTacToe Spiel Programmieren
-# 1.    Hauptproblem: Wie arbeite ich überhaupt mit soetwas iwe einem Spielfeld, also etwas
-#       was der Spieler sehen kann?
-#
-# 2:    Wie mache ich Eingaben mit der Maus?
 # NOTES:
 # Spieler 1: X
 # Spieler 2: O
+
 from tkinter import *
 from functools import partial
-import ast
 
 # Counter etc.
 spieler_eins = True
