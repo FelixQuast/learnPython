@@ -1,7 +1,6 @@
 # NOTES:
 # Spieler 1: X
 # Spieler 2: O
-
 from tkinter import *
 from functools import partial
 
